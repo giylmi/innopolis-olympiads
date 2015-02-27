@@ -1,0 +1,56 @@
+/*@import url(http://fonts.googleapis.com/css?family=Exo+2:400,300,500&subset=latin,cyrillic);*/
+
+@font-face {
+    font-family: Exo2-L;
+    src: url(../fonts/Exo2-Light.ttf);
+}
+@font-face {
+    font-family: Exo2-M;
+    src: url(../fonts/Exo2-Medium.ttf);
+}
+@font-face {
+    font-family: Exo2-R;
+    src: url(../fonts/Exo2-Regular.ttf);
+}
+* {
+    margin: 0;
+}
+html, body {
+}
+body{
+    background: #FFF;
+    font-family: 'Exo2-R', sans-serif;
+    color: #6c7d87;
+    font-size: 18px;
+}
+.body{
+    margin-top: 75px;
+}
+.header{
+    min-height: 75px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    position: fixed;
+}
+
+.head {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.nav-pills>li.active>a{
+    background-color: #42aaff;
+}
+
+.btn.btn-info {
+    background-color: #42aaff;
+}
+.alert.alert-info{
+    background-color: #42aaff;
+}
+.has-info .form-control{
+    border-color: #42aaff;
+}
+h1, h2, h3, h4, h5, h6, legend {
+    color: #42aaff;
+}
