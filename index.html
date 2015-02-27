@@ -17,9 +17,11 @@
 </head>
 <body>
 
-    <div class="container">
-        <div class="row header">
+<div class="container">
+    <div class="row ">
+        <div class="header col-xs-12">
             <a href="/"><img src="images/logo.png" alt="Иннополис"/></a>
+
             <div class="pull-right">
                 <ul class="nav nav-pills pull-left">
                     <li class="active"><a href="javascript:void(0)">Об олимпиаде</a></li>
@@ -29,96 +31,120 @@
             </div>
         </div>
     </div>
+</div>
 
-    <div class="container body">
+<div class=" body">
 
 
-        <div class="row">
-            <div class="jumbotron">
-                <h1>Jumbotron</h1>
-                <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            </div>
+    <div class="row">
+        <div class="jumbotron">
+            <h1>Jumbotron</h1>
+
+            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured
+                content or information.</p>
         </div>
-        <div class="row well bs-component">
-            <!--<div class="well bs-component">-->
-                <h1>Жюри</h1>
+    </div>
+    <div class="row well bs-component">
+        <!--<div class="well bs-component">-->
+        <h1>Жюри</h1>
 
-                <div class="col-lg-4">
-                    <img class="img-responsive img-circle" src="images/zhuri.jpg" alt=""/>
-                    This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
-                </div>
-                <div class="col-lg-4">
-                    <img class="img-responsive img-circle" src="images/zhuri.jpg" alt=""/>
-                    This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
-                </div>
-                <div class="col-lg-4">
-                    <img class="img-responsive img-circle" src="images/zhuri.jpg" alt=""/>
-                    This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
-                </div>
-            <!--</div>-->
+        <div class="col-xs-4">
+            <img class="img-responsive img-circle" src="images/zhuri.jpg" alt=""/>
+            This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured
+            content or information.
         </div>
-        
-        <div class="row">
-            <div class="well bs-component">
-                <form class="form-horizontal" action="">
-                    <fieldset>
-                        <legend>Регистрация на олимпиаду</legend>
-                        <div class="alert alert-dismissable alert-default">
-                            <button type="button" class="close" data-dismiss="alert">×</button>
-                            <h4>Внимание!</h4>
-                            <p>Регистрация продлится до 20 марта. Список участников Вы можете найти <a class="alert-link" href="list.html">здесь</a></p>
+        <div class="col-xs-4">
+            <img class="img-responsive img-circle" src="images/zhuri.jpg" alt=""/>
+            This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured
+            content or information.
+        </div>
+        <div class="col-xs-4">
+            <img class="img-responsive img-circle" src="images/zhuri.jpg" alt=""/>
+            This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured
+            content or information.
+        </div>
+        <!--</div>-->
+    </div>
+
+    <div class="row">
+        <div class="well bs-component">
+            <form class="form-horizontal" action="">
+                <fieldset>
+                    <legend>Регистрация на олимпиаду</legend>
+                    <div class="alert alert-dismissable alert-default">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        <h4>Внимание!</h4>
+
+                        <p>Регистрация продлится до 20 марта. Список участников Вы можете найти <a class="alert-link"
+                                                                                                   href="list.html">здесь</a>
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+
+                            <div class="col-lg-10">
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                            </div>
                         </div>
                         <div class="form-group">
-                            <div class="form-group">
-                                <label class="col-lg-2 control-label" for="inputEmail">Email</label>
-                                <div class="col-lg-10">
-                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                                </div>
+                            <label for="inputPassword" class="col-lg-2 control-label">Пароль</label>
+
+                            <div class="col-lg-10">
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Пароль">
                             </div>
-                            <div class="form-group">
-                                <label for="inputPassword" class="col-lg-2 control-label">Пароль</label>
-                                <div class="col-lg-10">
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="Пароль">
-                                </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label" for="inputLastName">Фамилия</label>
+
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="inputLastName" placeholder="Фамилия">
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="form-group">
-                                <label class="col-lg-2 control-label" for="inputLastName">Фамилия</label>
-                                <div class="col-lg-10">
-                                    <input type="text" class="form-control" id="inputLastName" placeholder="Фамилия">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-lg-2 control-label" for="inputName">Имя</label>
-                                <div class="col-lg-10">
-                                    <input type="text" class="form-control" id="inputName" placeholder="Имя">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-lg-2 control-label" for="inputMiddleName">Отчество</label>
-                                <div class="col-lg-10 has-info">
-                                    <input type="text" class="form-control" id="inputMiddleName" placeholder="Отчество">
-                                </div>
+                            <label class="col-lg-2 control-label" for="inputName">Имя</label>
+
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="inputName" placeholder="Имя">
                             </div>
                         </div>
-                        <button class="btn btn-lg btn-info">Зарегистрироваться</button>
-                    </fieldset>
-                </form>
-            </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label" for="inputMiddleName">Отчество</label>
+
+                            <div class="col-lg-10 has-info">
+                                <input type="text" class="form-control" id="inputMiddleName" placeholder="Отчество">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-lg btn-info">Зарегистрироваться</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="row">
+        <div class="col-xs-4">
+            (c) Adel' moget v verstke
+        </div>
+        <div class="col-xs-8">
+            bla bla bla
         </div>
     </div>
 
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/material.min.js"></script>
-    <script src="js/ripples.js"></script>
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/script.js"></script>
-    <script>
-        $(function () {
-            $.material.init();
-            $.material.ripples();
-        });
-    </script>
+</footer>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/material.min.js"></script>
+<script src="js/ripples.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/script.js"></script>
+<script>
+    $(function () {
+        $.material.init();
+        $.material.ripples();
+    });
+</script>
 </body>
 </html>

@@ -31,6 +31,8 @@ body {
 
 .body {
     margin-top: 80px;
+    width: 970px;
+    margin: 80px auto;
 }
 
 .header {
@@ -43,6 +45,7 @@ body {
     z-index: 10;
     padding-left: 15px;
     padding-right: 25px;
+    min-width: 1000px;
 }
 
 .head {
@@ -87,4 +90,20 @@ h1, h2, h3, h4, h5, h6, legend {
 }
 .table>thead>tr>td.info, .table>tbody>tr>td.info, .table>tfoot>tr>td.info, .table>thead>tr>th.info, .table>tbody>tr>th.info, .table>tfoot>tr>th.info, .table>thead>tr.info>td, .table>tbody>tr.info>td, .table>tfoot>tr.info>td, .table>thead>tr.info>th, .table>tbody>tr.info>th, .table>tfoot>tr.info>th{
     background-color: rgba(66, 170, 255, 0.40);
+}
+body{
+    min-height: 1000px;
+}
+footer{
+    height: 100px;
+    padding: 10px;
+    margin-top: -80px;
+    background-color: #231f20;
+    color: #cdcdcd;
+}
+.copyright{
+    width: 300px;
+}
+.btn.btn-lg.btn-info{
+    text-transform: none;
 }
