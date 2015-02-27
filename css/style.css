@@ -46,6 +46,7 @@ body {
     padding-left: 15px;
     padding-right: 25px;
     min-width: 1000px;
+    right: 0;
 }
 
 .head {
@@ -77,9 +78,9 @@ h1, h2, h3, h4, h5, h6, legend {
     background-color: #42aaff;
 }
 
-.pull-right {
-    margin-right: 80px;
-}
+/*.pull-right {*/
+    /*margin-right: 80px;*/
+/*}*/
 
 .jumbotron {
     color: #000000;
@@ -97,7 +98,7 @@ body{
 footer{
     height: 100px;
     padding: 10px;
-    margin-top: -80px;
+    /*margin-top: -80px;*/
     background-color: #231f20;
     color: #cdcdcd;
 }
