@@ -112,3 +112,6 @@ footer{
       margin-left: 0;
       margin-right: 0;
  }
+.bs-component.well.affix {
+    width: 293px;
+}
