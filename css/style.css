@@ -107,3 +107,7 @@ footer{
 .btn.btn-lg.btn-info{
     text-transform: none;
 }
+.row {
+      margin-left: 0;
+      margin-right: 0;
+ }
