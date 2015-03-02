@@ -69,7 +69,7 @@
 
     <div class="row">
         <div class="well bs-component">
-            <form class="form-horizontal" action="">
+            <form class="form-horizontal js-form" action="">
                 <fieldset>
                     <legend>Регистрация на олимпиаду</legend>
                     <div class="alert alert-dismissable alert-default">
@@ -80,46 +80,66 @@
                                                                                                    href="list.html">здесь</a>
                         </p>
                     </div>
+                    <div class="js-user-saved alert alert-dismissable alert-info" hidden="hidden">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        <h4>Поздравляем</h4>
+
+                        <p>Регистрация прошла успешно. Убедитесь в этом, найдя себя <a class="alert-link"
+                                                                                            href="list.html">здесь</a>
+                        </p>
+                    </div>
+                    <div class="js-user-saved alert alert-dismissable alert-danger" hidden="hidden">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        <h4>Неудача</h4>
+
+                        <p>К сожалению, попытка регистрации неуспешна.
+                        </p>
+                    </div>
                     <div class="form-group">
                         <div class="form-group">
-                            <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+                            <label class="col-lg-2 control-label" for="email">Email</label>
 
                             <div class="col-lg-10">
-                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                <input type="email" class="form-control js-validate-null" id="email" name="email" placeholder="Email">
                             </div>
+                            <ul class="js-error js-email-error"></ul>
                         </div>
                         <div class="form-group">
-                            <label for="inputPassword" class="col-lg-2 control-label">Пароль</label>
+                            <label for="password" class="col-lg-2 control-label">Пароль</label>
 
                             <div class="col-lg-10">
-                                <input type="password" class="form-control" id="inputPassword" placeholder="Пароль">
+                                <input type="password" class="form-control js-validate-null" id="password" name="password" placeholder="Пароль">
                             </div>
+                            <ul class="js-error js-password-error"></ul>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="form-group">
-                            <label class="col-lg-2 control-label" for="inputLastName">Фамилия</label>
+                            <label class="col-lg-2 control-label" for="lastName">Фамилия</label>
 
                             <div class="col-lg-10">
-                                <input type="text" class="form-control" id="inputLastName" placeholder="Фамилия">
+                                <input type="text" class="form-control js-validate-null" id="lastName" name="lastName" placeholder="Фамилия">
                             </div>
+                            <ul class="js-error js-lastName-error"></ul>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-2 control-label" for="inputName">Имя</label>
+                            <label class="col-lg-2 control-label" for="firstName">Имя</label>
 
                             <div class="col-lg-10">
-                                <input type="text" class="form-control" id="inputName" placeholder="Имя">
+                                <input type="text" class="form-control js-validate-null" id="firstName" name="firstName" placeholder="Имя">
                             </div>
+                            <ul class="js-error js-firstName-error"></ul>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-2 control-label" for="inputMiddleName">Отчество</label>
+                            <label class="col-lg-2 control-label" for="middleName">Отчество</label>
 
                             <div class="col-lg-10 has-info">
-                                <input type="text" class="form-control" id="inputMiddleName" placeholder="Отчество">
+                                <input type="text" class="form-control js-validate-null" id="middleName" name="middleName" placeholder="Отчество">
                             </div>
+                            <ul class="js-error js-middleName-error"></ul>
                         </div>
                     </div>
-                    <button class="btn btn-lg btn-info">Зарегистрироваться</button>
+                    <button class="btn btn-lg btn-info" type="submit">Зарегистрироваться</button>
                 </fieldset>
             </form>
         </div>
@@ -141,6 +161,7 @@
 <script src="js/ripples.js"></script>
 <script src="js/bootstrap-datepicker.js"></script>
 <script src="js/script.js"></script>
+<script src="js/form.js"></script>
 <script>
     $(function () {
         $.material.init();

@@ -115,3 +115,7 @@ footer{
 .bs-component.well.affix {
     width: 293px;
 }
+
+.js-error > li {
+    list-style: none;
+}
