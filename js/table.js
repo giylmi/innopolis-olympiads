@@ -4,7 +4,7 @@
 $(document).ready(function () {
     $.ajax({
         type: 'POST',
-        url: 'http://my.site.com:8080/contestants',
+        url: 'http://pcms.university.innopolis.ru/olympiads/contestants',
         success: function (response) {
             if (response) {
                 var data = eval(response);

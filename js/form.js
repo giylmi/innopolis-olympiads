@@ -29,7 +29,7 @@ $(document).ready(function () {
         $('.js-user-saved').hide();
         $.ajax({
             type: 'POST',
-            url: 'http://my.site.com:8080/save',
+            url: 'http://pcms.university.innopolis.ru/olympiads/save',
             //contentType: "application/json",
             data: $form.serialize(),
             success: function (response) {
@@ -40,11 +40,15 @@ $(document).ready(function () {
                         for (var key in data) {
                             if (data.hasOwnProperty(key)) {
                                 hasProps = true;
-                                var $error = $('.js-' + key + '-error');
-                                $error.html('');
-                                for (var error in data[key])
-                                    $error.append('<li>' + data[key][error] + '</li>');
-                                $error.parent().addClass('has-error');
+                                if (key == 'contestants'){
+                                    $('.js-user-notsaved').show();
+                                } else {
+                                    var $error = $('.js-' + key + '-error');
+                                    $error.html('');
+                                    for (var error in data[key])
+                                        $error.append('<li>' + data[key][error] + '</li>');
+                                    $error.parent().addClass('has-error');
+                                }
                             }
 
                         }
