@@ -20,7 +20,7 @@
 <div class="container">
     <div class="row header">
         <div class=" col-xs-4">
-            <a href="/"><img src="images/logo.png" alt="Иннополис"/></a>
+            <a href="/"><img src="images/logo.png" alt="Университет Иннополис"/></a>
         </div>
     <div class=" col-xs-8">
             <div class="">
@@ -39,53 +39,34 @@
 
     <div class="row">
         <div class="jumbotron">
-            <h1>Jumbotron</h1>
+            <h1>Открытая олимпиада</h1>
 
-            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured
-                content or information.</p>
+            <p>Открытая олимпиада школьников по программированию Университета Иннополис.</p>
         </div>
     </div>
     <div class="row well bs-component">
         <!--<div class="well bs-component">-->
-        <h1>Жюри</h1>
-
-        <div class="col-xs-4">
-            <img class="img-responsive img-circle" src="images/zhuri.jpg" alt=""/>
-            This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured
-            content or information.
-        </div>
-        <div class="col-xs-4">
-            <img class="img-responsive img-circle" src="images/zhuri.jpg" alt=""/>
-            This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured
-            content or information.
-        </div>
-        <div class="col-xs-4">
-            <img class="img-responsive img-circle" src="images/zhuri.jpg" alt=""/>
-            This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured
-            content or information.
-        </div>
-        <!--</div>-->
+        <h1>Информация</h1>
+        <p>Объявляется регистрация на открытую олимпиаду Университета Иннополис по программированию! Олимпиада проводится для школьников 9-11 классов (ученики 7-8 классов могут участвовать за 9 класс).</p> 
+        <p>Олимпиада будет проводиться в два тура: заочный и очный.</p>
+        <p>Заочный этап пройдет 22 марта. Для участия необходимо зерегистрироваться ниже. участники, набравшие наибольшее количество баллов, будут приглашены на очный этап .</p>
+        <p>Очный этап пройдет 19 апреля в Университете Иннополис. По итогам олимпиады, призеры и победители будут награждены дипломами и ценными призами.</p>
+        <p>Ученикам 11 класса также будут предоставлятся льготы при поступлении в Университет Иннополис: победители Олимпиады получат право поступить в Университет Иннополис без экзаменов.</p>
     </div>
 
     <div class="row">
         <div class="well bs-component">
             <form class="form-horizontal js-form" action="">
                 <fieldset>
-                    <legend>Регистрация на олимпиаду</legend>
+                    <legend>Регистрация на заочный этап олимпиады</legend>
                     <div class="alert alert-dismissable alert-default">
-                        <button type="button" class="close" data-dismiss="alert">×</button>
-                        <h4>Внимание!</h4>
-
-                        <p>Регистрация продлится до 20 марта. Список участников Вы можете найти <a class="alert-link"
-                                                                                                   href="list.html">здесь</a>
-                        </p>
+                        <button type="button" class="close" data-dismiss="alert">×</button>                        
                     </div>
                     <div class="js-user-saved alert alert-dismissable alert-info" hidden="hidden">
                         <button type="button" class="close" data-dismiss="alert">×</button>
                         <h4>Поздравляем</h4>
 
-                        <p>Регистрация прошла успешно. Убедитесь в этом, найдя себя <a class="alert-link"
-                                                                                            href="list.html">здесь</a>
+                        <p>Регистрация прошла успешно. Убедитесь в этом, найдя себя <a class="alert-link" href="list.html">здесь</a>
                         </p>
                     </div>
                     <div class="js-user-notsaved alert alert-dismissable alert-danger" hidden="hidden">
@@ -94,24 +75,6 @@
 
                         <p>К сожалению, попытка регистрации неуспешна.
                         </p>
-                    </div>
-                    <div class="form-group">
-                        <div class="form-group">
-                            <label class="col-lg-2 control-label" for="email">Email</label>
-
-                            <div class="col-lg-10">
-                                <input type="email" class="form-control js-validate-null" id="email" name="email" placeholder="Email">
-                            </div>
-                            <ul class="js-error js-email-error"></ul>
-                        </div>
-                        <div class="form-group">
-                            <label for="password" class="col-lg-2 control-label">Пароль</label>
-
-                            <div class="col-lg-10">
-                                <input type="password" class="form-control js-validate-null" id="password" name="password" placeholder="Пароль">
-                            </div>
-                            <ul class="js-error js-password-error"></ul>
-                        </div>
                     </div>
                     <div class="form-group">
                         <div class="form-group">
@@ -138,7 +101,169 @@
                             </div>
                             <ul class="js-error js-middleName-error"></ul>
                         </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label" for="dateOfBirth">Дата рождения</label>
+
+                            <div class="col-lg-10 has-info">
+                                <input type="text" class="form-control js-validate-null" id="dateOfBirth" name="dateOfBirth" placeholder="01.01.2015">
+                            </div>
+                            <ul class="js-error js-dateOfBirth-error"></ul>
+                        </div>
                     </div>
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label" for="region">Регион</label>
+
+                            <div class="col-lg-10 has-info">
+                                <select class="form-control js-validate-null" name="region" id="region">
+                                    <option value="-" disabled="disabled">--- Выберите регион РФ ---</option>
+                                    <option value="Республика Татарстан"  >Республика Татарстан</option>
+                                    <option value="Республика Адыгея"  >Республика Адыгея</option>
+                                    <option value="Республика Башкортостан"  >Республика Башкортостан</option>
+                                    <option value="Республика Бурятия"  >Республика Бурятия</option>
+                                    <option value="Республика Алтай"  >Республика Алтай</option>
+                                    <option value="Республика Дагестан"  >Республика Дагестан</option>
+                                    <option value="Республика Ингушетия"  >Республика Ингушетия</option>
+                                    <option value="Кабардино-Балкарская Республика"  >Кабардино-Балкарская Республика</option>
+                                    <option value="Республика Калмыкия"  >Республика Калмыкия</option>
+                                    <option value="Республика Карачаево-Черкессия"  >Республика Карачаево-Черкессия</option>
+                                    <option value="Республика Карелия"  >Республика Карелия</option>
+                                    <option value="Республика Коми"  >Республика Коми</option>
+                                    <option value="Республика Марий Эл"  >Республика Марий Эл</option>
+                                    <option value="Республика Мордовия"  >Республика Мордовия</option>
+                                    <option value="Республика Саха (Якутия)"  >Республика Саха (Якутия)</option>
+                                    <option value="Республика Северная Осетия-Алания"  >Республика Северная Осетия-Алания</option>                                    
+                                    <option value="Республика Тыва"  >Республика Тыва</option>
+                                    <option value="Удмуртская Республика"  >Удмуртская Республика</option>
+                                    <option value="Республика Хакасия"  >Республика Хакасия</option>
+                                    <option value="Чувашская Республика"  >Чувашская Республика</option>
+                                    <option value="Алтайский край"  >Алтайский край</option>
+                                    <option value="Краснодарский край"  >Краснодарский край</option>
+                                    <option value="Красноярский край"  >Красноярский край</option>
+                                    <option value="Приморский край"  >Приморский край</option>
+                                    <option value="Ставропольский край"  >Ставропольский край</option>
+                                    <option value="Хабаровский край"  >Хабаровский край</option>
+                                    <option value="Амурская область"  >Амурская область</option>
+                                    <option value="Архангельская область"  >Архангельская область</option>
+                                    <option value="Астраханская область"  >Астраханская область</option>
+                                    <option value="Белгородская область"  >Белгородская область</option>
+                                    <option value="Брянская область"  >Брянская область</option>
+                                    <option value="Владимирская область"  >Владимирская область</option>
+                                    <option value="Волгоградская область"  >Волгоградская область</option>
+                                    <option value="Вологодская область"  >Вологодская область</option>
+                                    <option value="Воронежская область"  >Воронежская область</option>
+                                    <option value="Ивановская область"  >Ивановская область</option>
+                                    <option value="Иркутская область"  >Иркутская область</option>
+                                    <option value="Калиниградская область"  >Калиниградская область</option>
+                                    <option value="Калужская область"  >Калужская область</option>
+                                    <option value="Камчатский край"  >Камчатский край</option>
+                                    <option value="Кемеровская область"  >Кемеровская область</option>
+                                    <option value="Кировская область"  >Кировская область</option>
+                                    <option value="Костромская область"  >Костромская область</option>
+                                    <option value="Курганская область"  >Курганская область</option>
+                                    <option value="Курская область"  >Курская область</option>
+                                    <option value="Ленинградская область"  >Ленинградская область</option>
+                                    <option value="Липецкая область"  >Липецкая область</option>
+                                    <option value="Магаданская область"  >Магаданская область</option>
+                                    <option value="Московская область"  >Московская область</option>
+                                    <option value="Мурманская область"  >Мурманская область</option>
+                                    <option value="Нижегородская область"  >Нижегородская область</option>
+                                    <option value="Новгородская область"  >Новгородская область</option>
+                                    <option value="Новосибирская область"  >Новосибирская область</option>
+                                    <option value="Омская область"  >Омская область</option>
+                                    <option value="Оренбургская область"  >Оренбургская область</option>
+                                    <option value="Орловская область"  >Орловская область</option>
+                                    <option value="Пензенская область"  >Пензенская область</option>
+                                    <option value="Пермский край"  >Пермский край</option>
+                                    <option value="Псковская область"  >Псковская область</option>
+                                    <option value="Ростовская область"  >Ростовская область</option>
+                                    <option value="Рязанская область"  >Рязанская область</option>
+                                    <option value="Самарская область"  >Самарская область</option>
+                                    <option value="Саратовская область"  >Саратовская область</option>
+                                    <option value="Сахалинская область"  >Сахалинская область</option>
+                                    <option value="Свердловская область"  >Свердловская область</option>
+                                    <option value="Смоленская область"  >Смоленская область</option>
+                                    <option value="Тамбовская область"  >Тамбовская область</option>
+                                    <option value="Тверская область"  >Тверская область</option>
+                                    <option value="Томская область"  >Томская область</option>
+                                    <option value="Тульская область"  >Тульская область</option>
+                                    <option value="Тюменская область"  >Тюменская область</option>
+                                    <option value="Ульяновская область"  >Ульяновская область</option>
+                                    <option value="Челябинская область"  >Челябинская область</option>
+                                    <option value="Забайкальский край"  >Забайкальский край</option>
+                                    <option value="Ярославская область"  >Ярославская область</option>
+                                    <option value="город Москва"  >город Москва</option>
+                                    <option value="город Санкт-Петербург"  >город Санкт-Петербург</option>
+                                    <option value="Еврейская автономная область"  >Еврейская автономная область</option>
+                                    <option value="Ненецкий автономный округ"  >Ненецкий автономный округ</option>
+                                    <option value="Ханты-Мансийский автономный округ - Югра"  >Ханты-Мансийский автономный округ - Югра</option>
+                                    <option value="Чукотский автономный округ"  >Чукотский автономный округ</option>
+                                    <option value="Ямало-Ненецкий автономный округ"  >Ямало-Ненецкий автономный округ</option>
+                                    <option value="Чеченская Республика"  >Чеченская Республика</option>
+                                </select>                                
+                            </div>
+                            <ul class="js-error js-region-error"></ul>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label" for="city">Город</label>
+
+                            <div class="col-lg-10 has-info">
+                                <input type="text" class="form-control js-validate-null" id="city" name="city" placeholder="Иннополис">
+                            </div>
+                            <ul class="js-error js-city-error"></ul>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label" for="school">Школа</label>
+
+                            <div class="col-lg-10 has-info">
+                                <input type="text" class="form-control js-validate-null" id="school" name="school" placeholder="Лицей №1">
+                            </div>
+                            <ul class="js-error js-school-error"></ul>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label" for="grade">Класс</label>
+
+                            <div class="col-lg-10 has-info">
+                                <input type="text" class="form-control js-validate-null" id="grade" name="grade" placeholder="11">
+                            </div>
+                            <ul class="js-error js-grade-error"></ul>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label" for="tel">Телефон</label>
+
+                            <div class="col-lg-10">
+                                <input type="tel" class="form-control js-validate-null" id="tel" name="tel" placeholder="+79876543210">
+                            </div>
+                            <ul class="js-error js-email-error"></ul>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label" for="email">Email</label>
+
+                            <div class="col-lg-10">
+                                <input type="email" class="form-control js-validate-null" id="email" name="email" placeholder="Email">
+                            </div>
+                            <ul class="js-error js-email-error"></ul>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-lg-2 control-label">Пароль</label>
+
+                            <div class="col-lg-10">
+                                <input type="password" class="form-control js-validate-null" id="password" name="password" placeholder="Пароль">
+                            </div>
+                            <ul class="js-error js-password-error"></ul>
+                        </div>
+                    </div>
+                    <h4>Внимание!</h4>
+                        <p>Нажимая на кнопку "Зарегистрироваться" Вы подтверждаете согласие на обработку персональнях данных</a>
+                        </p>
                     <button class="btn btn-lg btn-info" type="submit">Зарегистрироваться</button>
                 </fieldset>
             </form>
@@ -148,10 +273,12 @@
 <footer>
     <div class="row">
         <div class="col-xs-4">
-            (c) Adel' moget v verstke
+            <a href="http://university.innopolis.ru/">Университет Иннополис</a><br/>            
         </div>
         <div class="col-xs-8">
-            bla bla bla
+            <p>Контакты оргкомитета:<br/>
+            <a href="mailto:i.safiulin@innopolis.ru">Ильшат Сафиулин</a><br/>
+            <a href="mailto:e.nureeva@innopolis.ru">Эльвира Нуреева</a><br/></p>
         </div>
     </div>
 
