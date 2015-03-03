@@ -12,7 +12,7 @@ $(document).ready(function () {
                     $(data).each(function (i, e) {
                         $('.js-table-body').append(
                             '<tr class="' + (e.status?'success':'danger') + '">' +
-                                '<td>' + e.lastName + ' ' + e.firstName + e.middleName + '</td>' +
+                                '<td>' + e.lastName + ' ' + e.firstName + ' ' + e.middleName + '</td>' +
                                 '<td>' + e.status + '</td>' +
                             '</tr>'
                         );
