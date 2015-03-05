@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/material.min.css" rel="stylesheet" type="text/css">
+    <link href="css/ripples.min.css" rel="stylesheet" type="text/css">
+    <link href="css/material-wfont.css" rel="stylesheet" type="text/css">
+    <link href="css/datepicker.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <script src="js/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="row header">
+        <div class=" col-xs-4">
+            <a href="/"><img src="images/logo.png" alt="Иннополис"/></a>
+        </div>
+    <div class=" col-xs-8">
+            <div class="">
+                <ul class="nav nav-pills pull-right">
+                    <li><a href="index.html">Об олимпиаде</a></li>                    
+                    <li class="active"><a href="javascript:void(0)">Заочный этап</a></li>
+                    <li><a href="list.html">Список участников</a></li>
+                </ul>
+            </div>
+    </div>
+    </div>
+</div>
+
+<div class=" body">
+
+
+    <div class="row">
+        <div class="jumbotron">
+            <h1>Открытая олимпиада</h1>
+
+            <p>Открытая олимпиада школьников по программированию Университета Иннополис.</p>
+        </div>
+    </div>
+
+    <div class="row well bs-component">        
+        <h1>Информация о заочном этапе</h1>
+        <p>Заочный этап олимпиады проводится в один тур, который состоится 22 марта 2015 года. Начало тура запланировано на 11:00, продолжительность – 5 часов. По результатам заочного тура лучшие школьники будут приглашены для участия в очном этапе. Точный список приглашенных будет опубликован на сайте после подведения итогов отборочного этапа.</p>
+        <p>Заочный этап проводится с использованием сети Интернет. Школьники могут участвовать на любых компьютерах. Для проверки решений будет использована система PCMS2.</p>
+        <p>Заочный этап будет проходить по правилам Всероссийской олимпиады школьников по информатике. На туре Вам будут предложены 4-5 задач, решения которых нужно отправить в жюри через веб-интерфейс сайта олимпиады. Все попытки будут проверяться в автоматическом режиме.</p>
+    </div>
+    <div class="row well bs-component">        
+        <h2>Правила</h2>
+        <p>Решением является программа, написанная на одном из языков программирования:<br/>
+            <ul>
+                <li>C++</li>
+                <li>C</li>
+                <li>Java</li>
+                <li>Pascal</li>
+                <li>Python</li>
+            </ul>
+        </p>
+        <p>При компиляции текста программы, которую участник сдает на проверку, жюри использует вполне определенные командные строки для компиляции решений:</p>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Компилятор</th>
+                    <th>Командная строка</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GNU C++ 4.8 (MinGW)</td>
+                    <td>g++ -O2 -х с++ –WI, --stack=67108864 &lt;исходный файл&gt;</td>
+                </tr>
+                <tr>
+                    <td>GNU C++11 4.8 (MinGW)</td>
+                    <td>g++ -O2 -х с++ -D__USE_MINGW_ANSI_STDIO=0 –WI, --stack=67108864 --std=c++11 &lt;исходный файл&gt;</td>
+                </tr>
+                <tr>
+                    <td>GNU С 4.8 (MinGW)</td>
+                    <td>gcc -O2 -х с –WI, --stack=67108864 &lt;исходный файл&gt;</td>
+                </tr>
+                <tr>
+                    <td>Visual C++ 2013</td>
+                    <td>cl /O2 /EHs /TP &lt;исходный файл&gt;</td>
+                </tr>
+                <tr>
+                    <td>Java 1.8</td>
+                    <td>javac &lt;исходный файл&gt;</td>
+                </tr>
+                <tr>
+                    <td>Borland Delphi 7.0</td>
+                    <td>dcc32 -сс &lt;исходный файл&gt;</td>
+                </tr>
+                <tr>
+                    <td>Free Pascal</td>
+                    <td>fpc &lt;исходный файл&gt;</td>
+                </tr>
+                <tr>
+                    <td>Pascal ABC.Net 2.1</td>
+                    <td>pabcnetcc &lt;исходный файл&gt;</td>
+                </tr>
+                <tr>
+                    <td>Python 3.3</td>
+                    <td>python &lt;исходный файл&gt;</td>
+                </tr>
+            </tbody>    
+    </div>
+</div>
+<footer>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="http://university.innopolis.ru/">Университет Иннополис</a><br/>            
+        </div>
+        <div class="col-xs-8">
+            <p>Контакты оргкомитета:<br/>
+            <a href="mailto:i.safiulin@innopolis.ru">Ильшат Сафиулин</a><br/>
+            <a href="mailto:e.nureeva@innopolis.ru">Эльвира Нуреева</a><br/></p>
+        </div>
+    </div>
+
+</footer>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/material.min.js"></script>
+<script src="js/ripples.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/script.js"></script>
+<script src="js/form.js"></script>
+<script>
+    $(function () {
+        $.material.init();
+        $.material.ripples();
+    });
+</script>
+</body>
+</html>
