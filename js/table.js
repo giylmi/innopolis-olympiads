@@ -11,7 +11,7 @@ $(document).ready(function () {
                 if (data) {
                     $(data).each(function (i, e) {
                         $('.js-table-body').append(
-                            '<tr class="' + (e.status?'success':'danger') + '">' +
+                            '<tr class="' + (e.status!=null?(e.status?'success':'danger'):'warning') + '">' +
                                 '<td>' + e.lastName + ' ' + e.firstName + ' ' + e.middleName + '</td>' +
                                 '<td>' + (e.status!=null?(e.status?'Подтвержден':'Не подтвержден'):'Ожидается') + '</td>' +
                             '</tr>'
