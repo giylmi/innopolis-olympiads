@@ -13,7 +13,7 @@ $(document).ready(function () {
                         $('.js-table-body').append(
                             '<tr class="' + (e.status!=null?(e.status?'success':'danger'):'warning') + '">' +
                                 '<td>' + e.lastName + ' ' + e.firstName + ' ' + e.middleName + '</td>' +
-                                '<td>' + (e.status!=null?(e.status?'Подтвержден':'Отклонен'):'Ожидается') + '</td>' +
+                                '<td>' + (e.status!=null?(e.status?'Подтвержден':'Отклонен'):'Ожидание') + '</td>' +
                             '</tr>'
                         );
                     });
