@@ -17,6 +17,14 @@ $(document).ready(function () {
                             '</tr>'
                         );
                     });
+                    $(document).ready(function(){
+                        $('.js-table').DataTable({
+                            "language": {
+                                "url": "//cdn.datatables.net/plug-ins/f2c75b7247b/i18n/Russian.json"
+                            },
+                            "pagingType": "simple"
+                        });
+                    });
                 }
             }
         },
