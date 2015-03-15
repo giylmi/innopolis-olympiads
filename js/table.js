@@ -22,7 +22,9 @@ $(document).ready(function () {
                             "language": {
                                 "url": "//cdn.datatables.net/plug-ins/f2c75b7247b/i18n/Russian.json"
                             },
-                            "pagingType": "simple"
+                            "pagingType": "simple_numbers",
+                            "lengthMenu": [[25, 50, -1], [25, 50, "All"]],
+                            "order": [[ 1, 'asc' ]]
                         });
                     });
                 }
