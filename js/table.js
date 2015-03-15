@@ -24,7 +24,7 @@ $(document).ready(function () {
                             },
                             "pagingType": "simple_numbers",
                             "lengthMenu": [[25, 50, -1], [25, 50, "All"]],
-                            "order": [[ 1, 'asc' ]]
+                            "order": [[ 1, 'asc' ], [ 0, 'asc' ]]
                         });
                     });
                 }
