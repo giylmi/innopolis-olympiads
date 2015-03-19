@@ -64,6 +64,10 @@ $(document).ready(function () {
         });
     });
 
-
+    $('.my-checkbox').on('click', function () {
+        var $this = $(this);
+        if ($this.is(':checked')) $('.js-password').attr('type', 'text');
+        else $('.js-password').attr('type', 'password');
+    })
 });
 

@@ -119,3 +119,7 @@ footer{
 .js-error > li {
     list-style: none;
 }
+
+input[type=checkbox].my-checkbox {
+    margin-left: 15px;
+}

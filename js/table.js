@@ -2,6 +2,28 @@
  * Created by giylmi on 03.03.2015.
  */
 $(document).ready(function () {
+    var russian = {
+        "processing": "Подождите...",
+        "search": "Поиск:",
+        "lengthMenu": "Показать _MENU_ записей",
+        "info": "Записи с _START_ до _END_ из _TOTAL_ записей",
+        "infoEmpty": "Записи с 0 до 0 из 0 записей",
+        "infoFiltered": "(отфильтровано из _MAX_ записей)",
+        "infoPostFix": "",
+        "loadingRecords": "Загрузка записей...",
+        "zeroRecords": "Записи отсутствуют.",
+        "emptyTable:": "В таблице отсутствуют данные",
+        "paginate": {
+            "first": "Первая",
+            "previous": "<span><i class='glyphicon glyphicon-arrow-left'></i></span>",
+            "next": "<span><i class='glyphicon glyphicon-arrow-right'></i></span>",
+            "last": "Последняя"
+        },
+        "aria": {
+            "sortAscending": ": активировать для сортировки столбца по возрастанию",
+            "sortDescending": ": активировать для сортировки столбца по убыванию"
+        }
+    };
     $.ajax({
         type: 'POST',
         url: 'http://pcms.university.innopolis.ru/olympiads/contestants',
@@ -17,15 +39,11 @@ $(document).ready(function () {
                             '</tr>'
                         );
                     });
-                    $(document).ready(function(){
-                        $('.js-table').DataTable({
-                            "language": {
-                                "url": "//cdn.datatables.net/plug-ins/f2c75b7247b/i18n/Russian.json"
-                            },
-                            "pagingType": "simple_numbers",
-                            "lengthMenu": [[25, 50, -1], [25, 50, "All"]],
-                            "order": [[ 1, 'asc' ], [ 0, 'asc' ]]
-                        });
+                    $('.js-table').DataTable({
+                        "language": russian,
+                        "pagingType": "simple_numbers",
+                        "lengthMenu": [[25, 50, -1], [25, 50, "All"]],
+                        "order": [[ 1, 'asc' ], [ 0, 'asc' ]]
                     });
                 }
             }
