@@ -12,6 +12,10 @@
     <link href="css/material-wfont.css" rel="stylesheet" type="text/css">
     <link href="css/datepicker.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+	
+	<!-- Owl Carousel Assets -->
+    <link href="css/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl-carousel/owl.theme.css" rel="stylesheet">
 
     <script src="js/jquery-2.1.1.min.js"></script>
 </head>
@@ -290,7 +294,23 @@
         <p>С 10:00 19 марта по 18:00 21 марта (время Московское) проходит пробный тур. Он не влияет на результаты заочного этапа, его цель - ознакомление с системой проверки, форматом задач.</p>
         <p>Если Ваша регистрация подтверждена, Вы можете зайти со своим e-mail и паролем в <a class="text-info" href="http://pcms.university.innopolis.ru/pcms2client">систему проверки</a> и принять участие. По всем вопросам обращаться по контактам внизу.</p>        
     </div>
+	
+	
+	<div class="row">
+		<div class="span12">
+
+		<div id="partners" class="owl-carousel">
+			<div class="item"><a href="http://tatarstan.ru/" target="_blank"><img src="images/rt_for_site.png"></a></div>
+			<div class="item"><a href="http://megafon.ru/" target="_blank"><img src="images/megafon-footer.jpg"></a></div>
+			<div class="item"><a href="http://www.minsvyaz.ru/ru/" target="_blank"><img src="images/misv-footer.png"></a></div>
+			<div class="item"><a href="http://dnevnik.ru/" target="_blank"><img src="images/dnevnik-ru-footer.png"></a></div>
+			<div class="item"><a href="http://foxford.ru/courses?ref=innopolis" target="_blank"><img src="images/foxford-ru-footer.png"></a></div>
+		</div>  
+	</div>
+	</div>
+    
 </div>
+
 <footer>
     <div class="row">
         <div class="col-xs-4">
@@ -317,5 +337,33 @@
         $.material.ripples();
     });
 </script>
+	<script src="js/owl-carousel/owl.carousel.js"></script>
+
+
+    <!-- Demo -->
+
+    <style>
+    #partners .item{
+        margin: 3px;
+    }
+    #partners .item img{
+        display: block;
+        width: auto;
+        height: 100%;
+    }
+    </style>
+
+
+    <script>
+    $(document).ready(function() {
+      $("#partners").owlCarousel({
+        autoPlay: 3000,
+        items : 4,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+      });
+
+    });
+    </script>
 </body>
 </html>
