@@ -26,7 +26,7 @@ $(document).ready(function () {
     };
     $.ajax({
         type: 'POST',
-        url: 'http://pcms.university.innopolis.ru/olympiads/contestantViewObject',
+        url: 'http://pcms.university.innopolis.ru/olympiads/values/contestantViewObject',
         success: function (response) {
             if (response) {
                 var data = eval(response);
