@@ -29,7 +29,7 @@ $(document).ready(function () {
         $('.js-user-saved').hide();
         $.ajax({
             type: 'POST',
-            url: 'http://pcms.university.innopolis.ru/olympiads/save',
+            url: 'http://pcms.university.innopolis.ru/olympiads/save/registrationForm',
             //contentType: "application/json",
             data: $form.serialize(),
             success: function (response) {
