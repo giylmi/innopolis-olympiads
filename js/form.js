@@ -40,7 +40,7 @@ $(document).ready(function () {
                         for (var key in data) {
                             if (data.hasOwnProperty(key)) {
                                 hasProps = true;
-                                if (key == 'contestants'){
+                                if (key == 'registrationForm'){
                                     $('.js-user-notsaved').show();
                                 } else {
                                     var $error = $('.js-' + key + '-error');
