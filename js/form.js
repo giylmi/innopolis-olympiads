@@ -20,7 +20,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: 'POST',
-            url: 'http://pcms.university.innopolis.ru/olympiads/save/' + $form.id,
+            url: 'http://pcms.university.innopolis.ru/olympiads/save/' + $form.attr('id'),
             //contentType: "application/json",
             data: $form.serialize(),
             success: function (response) {
