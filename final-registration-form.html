@@ -47,49 +47,48 @@
             <form class="form-horizontal js-form" action="" id="final-registration-form">
                 <fieldset>
                     <legend>Регистрация на заочный этап олимпиады</legend>
-					<p class="text-warning">Регистрация будет закрыта в 10:00 22 марта.</p>
-                    <p class="small"><small>*для несовершеннолетнего участника анкета заполняется законным представителем </small></p>
+                    <p class="small"><small>*данные несовершеннолетнего участника заполняются законным представителем </small></p>
                     
                     <div class="form-group">
                         <div class="form-group">
-                            <label class="col-lg-2 control-label" for="last_name">Фамилия</label>
+                            <label class="col-lg-4 control-label" for="last_name">Фамилия</label>
 
-                            <div class="col-lg-10">
+                            <div class="col-lg-8">
                                 <input type="text" class="form-control js-validate-null" id="last_name" name="last_name" placeholder="Фамилия">
                             </div>
-                            <ul class="js-error js-lastName-error"></ul>
-                        </div>
-                        <!--div class="form-group">
-                            <label class="col-lg-2 control-label" for="firstName">Имя</label>
-
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control js-validate-null" id="firstName" name="firstName" placeholder="Имя">
-                            </div>
-                            <ul class="js-error js-firstName-error"></ul>
+                            <ul class="js-error js-last_name-error"></ul>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-2 control-label" for="middleName">Отчество</label>
+                            <label class="col-lg-4 control-label" for="first_name">Имя</label>
 
-                            <div class="col-lg-10 has-info">
-                                <input type="text" class="form-control js-validate-null" id="middleName" name="middleName" placeholder="Отчество">
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control js-validate-null" id="first_name" name="first_name" placeholder="Имя">
                             </div>
-                            <ul class="js-error js-middleName-error"></ul>
+                            <ul class="js-error js-first_name-error"></ul>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label" for="middle_name">Отчество</label>
+
+                            <div class="col-lg-8 has-info">
+                                <input type="text" class="form-control js-validate-null" id="middle_name" name="middle_name" placeholder="Отчество">
+                            </div>
+                            <ul class="js-error js-middle_name-error"></ul>
                         </div>
 
                         <div class="form-group">
-                            <label class="col-lg-2 control-label" for="dateOfBirth">Дата рождения</label>
+                            <label class="col-lg-4 control-label" for="dob">Дата рождения</label>
 
-                            <div class="col-lg-10 has-info">
-                                <input type="text" class="form-control js-validate-null" id="dateOfBirth" name="dateOfBirth" placeholder="22.03.2015">
+                            <div class="col-lg-8 has-info">
+                                <input type="text" class="form-control js-validate-null" id="dob" name="dob" placeholder="22.03.2015">
                             </div>
-                            <ul class="js-error js-dateOfBirth-error"></ul>
+                            <ul class="js-error js-dob-error"></ul>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="form-group">
-                            <label class="col-lg-2 control-label" for="region">Регион РФ/ Страна</label>
+                            <label class="col-lg-4 control-label" for="region">Регион РФ/ Страна</label>
 
-                            <div class="col-lg-10 has-info">
+                            <div class="col-lg-8 has-info">
                                 <select class="form-control js-validate-null" name="region" id="region">									
                                     <option value="-" disabled="disabled">- Выберите регион РФ -</option>
                                     <option value="Республика Татарстан"  >Республика Татарстан</option>
@@ -187,9 +186,9 @@
                             <ul class="js-error js-region-error"></ul>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-2 control-label" for="city">Город</label>
+                            <label class="col-lg-4 control-label" for="city">Город</label>
 
-                            <div class="col-lg-10 has-info">
+                            <div class="col-lg-8 has-info">
                                 <input type="text" class="form-control js-validate-null" id="city" name="city" placeholder="Иннополис">
                             </div>
                             <ul class="js-error js-city-error"></ul>
@@ -198,17 +197,17 @@
                     </div>
                     <div class="form-group">
                         <div class="form-group">
-                            <label class="col-lg-2 control-label" for="school">Школа</label>
+                            <label class="col-lg-4 control-label" for="school">Школа</label>
 
-                            <div class="col-lg-10 has-info">
+                            <div class="col-lg-8 has-info">
                                 <input type="text" class="form-control js-validate-null" id="school" name="school" placeholder="Лицей №1">
                             </div>
                             <ul class="js-error js-school-error"></ul>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-2 control-label" for="grade">Класс</label>
+                            <label class="col-lg-4 control-label" for="grade">Класс</label>
 
-                            <div class="col-lg-10 has-info">
+                            <div class="col-lg-8 has-info">
                                 <input type="text" class="form-control js-validate-null" id="grade" name="grade" placeholder="11">
                             </div>
                             <ul class="js-error js-grade-error"></ul>
@@ -218,33 +217,81 @@
 
                     <div class="form-group">
                         <div class="form-group">
-                            <label class="col-lg-2 control-label" for="tel">Телефон</label>
+                            <label class="col-lg-4 control-label" for="tel">Телефон</label>
 
-                            <div class="col-lg-10">
+                            <div class="col-lg-8">
                                 <input type="text" class="form-control js-validate-null" id="tel" name="tel" placeholder="+79876543210">
                             </div>
                             <ul class="js-error js-tel-error"></ul>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-2 control-label" for="email">Email</label>
+                            <label class="col-lg-4 control-label" for="email">Email</label>
 
-                            <div class="col-lg-10">
-                                <input type="email" class="form-control js-validate-null" id="email" name="email" placeholder="Email">
+                            <div class="col-lg-8">
+                                <input type="email" class="form-control js-validate-null" id="email" name="email" placeholder="informatics@innopolis.ru">
                             </div>
                             <ul class="js-error js-email-error"></ul>
                         </div>
+                    </div>
+					<div class="form-group">
                         <div class="form-group">
-                            <label for="password" class="col-lg-2 control-label">Пароль</label>
+                            <label class="col-lg-4 control-label" for="parent_name">ФИО одного из родителей</label>
 
-                            <div class="col-lg-10">
-                                <input type="password" class="form-control js-validate-null js-password" id="password" name="password" placeholder="Пароль">
+                            <div class="col-lg-8">
+                                <input type="parent_name" class="form-control js-validate-null" id="parent_name" name="parent_name" placeholder="Майер Марисса Ивановна">
                             </div>
-                            <ul class="js-error js-password-error"></ul>
+                            <ul class="js-error js-parent_name-error"></ul>
+                        </div>
+						<div class="form-group">
+                            <label class="col-lg-4 control-label" for="parent_tel">Телефон одного из родителей</label>
+
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control js-validate-null" id="parent_tel" name="parent_tel" placeholder="+79876543210">
+                            </div>
+                            <ul class="js-error js-parent_tel-error"></ul>
+                        </div>                        
+                    </div>
+					<div class="form-group">
+						<div class="form-group">
+                            <label class="col-lg-4 control-label" for="soft">Среда разработки</label>
+
+                            <div class="col-lg-8">
+                                <input type="soft" class="form-control js-validate-null" id="soft" name="soft" placeholder="Visual Studio 2013, IntelliJ IDEA">
+                            </div>
+                            <ul class="js-error js-soft-error"></ul>
+                        </div>
+						<div class="form-group">
+                            <label class="col-lg-4 control-label" for="arrival_time">Дата и время приезда в Казань</label>
+
+                            <div class="col-lg-8">
+                                <input type="arrival_time" class="form-control js-validate-null" id="arrival_time" name="arrival_time" placeholder="18 апреля 11:00">
+                            </div>
+                            <ul class="js-error js-arrival_time-error"></ul>
+                        </div>
+						<div class="form-group">
+                            <label class="col-lg-4 control-label" for="depart_time">Дата и время отъезда</label>
+
+                            <div class="col-lg-8">
+                                <input type="depart_time" class="form-control js-validate-null" id="depart_time" name="depart_time" placeholder="19 апреля 21:00">
+                            </div>
+                            <ul class="js-error js-depart_time-error"></ul>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-lg-2" for="showPassword">Показать пароль</label>
-                            <input class="checkbox-inline checkbox my-checkbox" id="showPassword" type="checkbox"/>
-                        </div-->
+                            <label class="col-lg-4 control-label" for="teacher_name">ФИО преподавателя</label>
+
+                            <div class="col-lg-8">
+                                <input type="teacher_name" class="form-control js-validate-null" id="teacher_name" name="teacher_name" placeholder="Маврин Павел Юрьевич">
+                            </div>
+                            <ul class="js-error js-teacher_name-error"></ul>
+                        </div>
+						<div class="form-group">
+                            <label class="col-lg-4 control-label" for="teacher_email">E-mail преподавателя</label>
+
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control js-validate-null" id="teacher_email" name="teacher_email" placeholder="pavel@innopolis.ru">
+                            </div>
+                            <ul class="js-error js-teacher_email-error"></ul>
+                        </div>                        
                     </div>
                     
                         <p class="small"><small>*В соответствии со статьей 9 Федерального закона от 27.07.2006 N 152-ФЗ «О персональных данных» я, являясь законным представителем несовершеннолетнего ребенка, указанного в анкете, настоящим даю свое согласие АНО ВО „Университет Иннополис“ на автоматизированную, а также без использования средств автоматизации обработку персональных данных несовершеннолетнего ребенка, указанных в анкете, а именно совершение действий, предусмотренных пунктом 3 статьи 3 Федерального закона от 27.07.2006 N 152-ФЗ «О персональных данных» в целях участия в Открытой Олимпиаде Университета Иннополис по программированию для школьников. Данное мною согласие действует до дня его отзыва в письменной форме.</small>
@@ -254,7 +301,7 @@
                         <button type="button" class="close" data-dismiss="alert">×</button>
                         <h4>Поздравляем</h4>
 
-                        <p>Регистрация прошла успешно. Убедитесь в этом, найдя себя <a class="alert-link" href="list.html">здесь</a>
+                        <p>Регистрация прошла успешно. Убедитесь в этом, найдя себя <a class="alert-link" href="final-list.html">здесь</a>
                         </p>
                     </div>
                     <div class="js-user-notsaved alert alert-dismissable alert-danger" hidden="hidden">
