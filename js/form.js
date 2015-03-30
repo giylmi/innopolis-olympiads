@@ -14,7 +14,7 @@ $(document).ready(function () {
         var $jsUserNotSaved = $form.find('.js-user-notsaved');
         var $jsUserSaved = $form.find('.js-user-saved');
 
-        $jsError.hide();
+        $jsError.html('');
         $jsUserNotSaved.hide();
         $jsUserSaved.hide();
 
