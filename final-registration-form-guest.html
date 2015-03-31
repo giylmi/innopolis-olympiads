@@ -44,15 +44,14 @@
 
     <div class="row well bs-component">
         <h1>Регистрация на очный этап олимпиады</h1>
-        <p>Заполняя эту анкету Вы подтверждаете свое участие на очном этапе. Просим Вас быть внимательными, так как эта информация будет использована при печати дипломов и сертификатов. Если Вы еще не знаете точное время приезда и отъезда, то необходимо эту информацию отправить на почту <a href="mailto:informatics@innopolis.ru">informatics@innopolis.ru</a>  до 13 апреля 2015 года. Если Вы неверно заполнили контактные данные, ФИО, любые другие изменения и уточнения просим также присылать на почту.</p>
+        <p>Если Вы еще не знаете точное время приезда и отъезда, то необходимо эту информацию отправить на почту <a href="mailto:informatics@innopolis.ru">informatics@innopolis.ru</a>  до 13 апреля 2015 года. Если Вы неверно заполнили контактные данные, ФИО, любые другие изменения и уточнения просим также присылать на почту.</p>
     </div>
 
     <div class="row">
         <div class="well bs-component">
-            <form class="form-horizontal js-form" action="" id="final-registration-form">
+            <form class="form-horizontal js-form" action="" id="final-registration-form-guest">
                 <fieldset>
-                    <legend>Анкета участника</legend>
-                    <p class="small"><small>*данные несовершеннолетнего участника заполняются законным представителем </small></p>
+                    <legend>Анкета сопровождающего</legend>                    
                     
                     <div class="form-group">
                         <div class="form-group">
@@ -79,16 +78,20 @@
                             </div>
                             <ul class="js-error js-middle_name-error"></ul>
                         </div>
-
                         <div class="form-group">
-                            <label class="col-lg-4 control-label" for="dob">Дата рождения</label>
+                            <label class="col-lg-4 control-label" for="guest_type">Статус</label>
 
                             <div class="col-lg-8 has-info">
-                                <input type="text" class="form-control js-validate-null" id="dob" name="dob" placeholder="22.03.2015">
+                                <select class="form-control js-validate-null" id="guest_type" name="guest_type">
+                                    <option value="Преподаватель">Преподаватель</option>
+                                    <option value="Родитель">Родитель</option>
+                                    <option value="Сопровождающий">Сопровождающий</option>
+                                </select>
                             </div>
-                            <ul class="js-error js-dob-error"></ul>
+                            <ul class="js-error js-guest_type-error"></ul>
                         </div>
                     </div>
+
                     <div class="form-group">
                         <div class="form-group">
                             <label class="col-lg-4 control-label" for="region">Регион РФ/ Страна</label>
@@ -200,25 +203,6 @@
                         </div>
 
                     </div>
-                    <div class="form-group">
-                        <div class="form-group">
-                            <label class="col-lg-4 control-label" for="school">Школа</label>
-
-                            <div class="col-lg-8 has-info">
-                                <input type="text" class="form-control js-validate-null" id="school" name="school" placeholder="Лицей №1">
-                            </div>
-                            <ul class="js-error js-school-error"></ul>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-4 control-label" for="grade">Класс</label>
-
-                            <div class="col-lg-8 has-info">
-                                <input type="text" class="form-control js-validate-null" id="grade" name="grade" placeholder="11">
-                            </div>
-                            <ul class="js-error js-grade-error"></ul>
-                        </div>
-
-                    </div>
 
                     <div class="form-group">
                         <div class="form-group">
@@ -238,33 +222,8 @@
                             <ul class="js-error js-email-error"></ul>
                         </div>
                     </div>
-					<div class="form-group">
-                        <div class="form-group">
-                            <label class="col-lg-4 control-label" for="parent_name">ФИО одного из родителей</label>
-
-                            <div class="col-lg-8">
-                                <input type="parent_name" class="form-control js-validate-null" id="parent_name" name="parent_name" placeholder="Майер Марисса Ивановна">
-                            </div>
-                            <ul class="js-error js-parent_name-error"></ul>
-                        </div>
-						<div class="form-group">
-                            <label class="col-lg-4 control-label" for="parent_tel">Телефон одного из родителей</label>
-
-                            <div class="col-lg-8">
-                                <input type="text" class="form-control js-validate-null" id="parent_tel" name="parent_tel" placeholder="+79876543210">
-                            </div>
-                            <ul class="js-error js-parent_tel-error"></ul>
-                        </div>                        
-                    </div>
-					<div class="form-group">
-						<div class="form-group">
-                            <label class="col-lg-4 control-label" for="soft">Среда разработки</label>
-
-                            <div class="col-lg-8">
-                                <input type="soft" class="form-control js-validate-null" id="soft" name="soft" placeholder="Visual Studio 2013, IntelliJ IDEA">
-                            </div>
-                            <ul class="js-error js-soft-error"></ul>
-                        </div>
+					
+					<div class="form-group">						
 						<div class="form-group">
                             <label class="col-lg-4 control-label" for="arrival_time">Дата и время приезда в Казань</label>
 
@@ -280,27 +239,17 @@
                                 <input type="depart_time" class="form-control js-validate-null" id="depart_time" name="depart_time" placeholder="19 апреля 21:00">
                             </div>
                             <ul class="js-error js-depart_time-error"></ul>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-4 control-label" for="teacher_name">ФИО преподавателя</label>
-
-                            <div class="col-lg-8">
-                                <input type="teacher_name" class="form-control js-validate-null" id="teacher_name" name="teacher_name" placeholder="Маврин Павел Юрьевич">
-                            </div>
-                            <ul class="js-error js-teacher_name-error"></ul>
-                        </div>
-						<div class="form-group">
-                            <label class="col-lg-4 control-label" for="teacher_email">E-mail преподавателя</label>
-
-                            <div class="col-lg-8">
-                                <input type="text" class="form-control js-validate-null" id="teacher_email" name="teacher_email" placeholder="pavel@innopolis.ru">
-                            </div>
-                            <ul class="js-error js-teacher_email-error"></ul>
                         </div>                        
-                    </div>
-                    
-                        <p class="small"><small>*В соответствии со статьей 9 Федерального закона от 27.07.2006 N 152-ФЗ «О персональных данных» я, являясь законным представителем несовершеннолетнего ребенка, указанного в анкете, настоящим даю свое согласие АНО ВО „Университет Иннополис“ на автоматизированную, а также без использования средств автоматизации обработку персональных данных несовершеннолетнего ребенка, указанных в анкете, а именно совершение действий, предусмотренных пунктом 3 статьи 3 Федерального закона от 27.07.2006 N 152-ФЗ «О персональных данных» в целях участия в Открытой Олимпиаде Университета Иннополис по программированию для школьников. Данное мною согласие действует до дня его отзыва в письменной форме.</small>
-                        </p>
+						<div class="form-group">
+                            <label class="col-lg-4 control-label" for="students">Список ребят, которых вы сопровождаете</label>
+
+                            <div class="col-lg-8">
+                                <textarea rows="5" class="form-control js-validate-null" id="students" name="students" placeholder="Иванов Иван Иванович"></textarea>
+                            </div>
+                            <ul class="js-error js-students-error"></ul>
+                        </div>                        
+                    </div>                    
+                        
                     <button class="btn btn-lg btn-info" type="submit">Зарегистрироваться</button>
 					<div class="js-user-saved alert alert-dismissable alert-info" hidden="hidden">
                         <button type="button" class="close" data-dismiss="alert">×</button>
@@ -319,7 +268,8 @@
                 </fieldset>
             </form>
         </div>
-    </div>    
+    </div>
+    
 </div>
 
 <footer>
