@@ -35,7 +35,7 @@ $(document).ready(function () {
                         $('.js-table-body').append(
                             '<tr class="' + (e.status!=null?(e.status?'success':'danger'):'warning') + '">' +
                                 '<td>' + e.last_name + ' ' + e.first_name + ' ' + e.middle_name + '</td>' +
-								'<td>' + (e.status!=null?(e.status?'Подтвержден':'Отклонен'):'Ожидание') + '</td>' +
+								'<td>' + (e.status!=null?(e.status?'Зачислен':'Отказ в зачислении'):'Квалификация') + '</td>' +
                             '</tr>'
                         );
                     });
