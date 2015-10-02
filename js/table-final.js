@@ -35,8 +35,9 @@ $(document).ready(function () {
                         $('.js-table-body').append(
                             '<tr class="' + (e.status!=null?(e.status?'success':'danger'):'warning') + '">' +
                                 '<td>' + e.last_name + ' ' + e.first_name + ' ' + e.middle_name + '</td>' +
-								'<td>' + e.arrival_time + '</td>' +
-								'<td>' + e.depart_time + '</td>' +
+								'<td>' + e.bus + '</td>' +
+								/*'<td>' + e.arrival_time + '</td>' +
+								'<td>' + e.depart_time + '</td>' +*/
                                 '<td>' + (e.status!=null?(e.status?'Подтвержден':'Отклонен'):'Ожидание') + '</td>' +
                             '</tr>'
                         );
@@ -45,7 +46,7 @@ $(document).ready(function () {
                         "language": russian,
                         "pagingType": "simple_numbers",
                         "lengthMenu": [[25, 50, -1], [25, 50, "All"]],
-                        "order": [[ 1, 'asc' ], [ 0, 'asc' ]]
+                        "order": [[ 0, 'asc' ]]
                     });
                 }
             }
