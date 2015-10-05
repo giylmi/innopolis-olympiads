@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Открытая Олимпиада Университета Иннополис</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/material.min.css" rel="stylesheet" type="text/css">
+    <link href="css/ripples.min.css" rel="stylesheet" type="text/css">
+    <link href="css/material-wfont.css" rel="stylesheet" type="text/css">
+    <link href="css/datepicker.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!--<link rel="stylesheet" href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.min.css"/>-->
+    <link rel="stylesheet" href="//cdn.datatables.net/plug-ins/f2c75b7247b/integration/bootstrap/3/dataTables.bootstrap.css"/>
+
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/plug-ins/f2c75b7247b/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row header">
+        <div class=" col-xs-4">
+            <a href="http://university.innopolis.ru"><img src="images/logo.png" alt="Иннополис"/></a>
+        </div>
+        <div class=" col-xs-8">
+            <div class="">
+                <ul class="nav nav-pills pull-right">
+                    <li><a href="index.html">Главная</a></li>
+					<li><a href="olymp.html">Олимпиады</a></li>
+					<li><a href="koshp.html">КОШП</a></li>
+					<li class="active"><a href="list-koshp.html">Список команд</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class=" container body">
+
+
+    <div class="row">
+        <div class="well bs-component">
+            <h2>Заявки на участие</h2>
+			<p>Когда Вы заполнили анкету, в этом списке появится Ваша команда со статусом "ожидание". После того, как Наш сотрудник проверит анкету статус сменится на "подвтержден" или "отклонен". Статус "подвтержден" означает, что все поля анкеты заполнены верно. Статус "отклонен" означает, что какие-то поля заполнены некорректно, нужно заполнить анкету еще раз или связаться с оргкомитетом.</p>
+            <div class="js-table-wrapper">
+            <table class="table table-striped js-table">
+                <thead>
+                    <tr>
+                        <td>Команда</td>
+                        <td>Участники</td>
+                        <td>Статус</td>
+                    </tr>
+                </thead>
+                <tbody class="js-table-body">
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="row">
+        <div class="col-xs-4">
+			<a href="http://university.innopolis.ru/">АНО ВО "Университет Иннополис"</a><br/>      
+            <a href="partners.html">Партнеры</a><br/>      
+        </div>
+        <div class="col-xs-8">
+            <p>Контакты оргкомитета:<br/>
+            <a href="mailto:i.safiulin@innopolis.ru">Ильшат Сафиулин</a><br/>
+            <a href="mailto:e.nureeva@innopolis.ru">Эльвира Нуреева</a><br/></p>
+        </div>
+    </div>
+
+</footer>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/material.min.js"></script>
+<script src="js/ripples.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/script.js"></script>
+<script src="js/table-koshp.js"></script>
+<script>
+    $(function () {
+        $.material.init();
+        $.material.ripples();
+    });
+</script>
+</body>
+</html>
