@@ -44,7 +44,7 @@ $(document).ready(function () {
                         "language": russian,
                         "pagingType": "simple_numbers",
                         "lengthMenu": [[25, 50, -1], [25, 50, "All"]],
-                        "order": [[ 0, 'asc' ]]
+                        "order": [[ 'asc', 0, 0 ]]
                     });
                 }
             }
