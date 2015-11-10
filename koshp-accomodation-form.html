@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Открытая Олимпиада Университета Иннополис</title>    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/material.min.css" rel="stylesheet" type="text/css">
+    <link href="css/ripples.min.css" rel="stylesheet" type="text/css">
+    <link href="css/material-wfont.css" rel="stylesheet" type="text/css">
+    <link href="css/datepicker.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+	
+	<!-- Owl Carousel Assets -->
+    <link href="css/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl-carousel/owl.theme.css" rel="stylesheet">
+
+    <script src="js/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="row header">
+        <div class=" col-xs-4">
+            <a href="http://university.innopolis.ru"><img src="images/logo.png" alt="Университет Иннополис"/></a>
+        </div>
+        <div class="col-xs-8">
+            <div class="">
+                <ul class="nav nav-pills pull-right">
+                    <li><a href="index.html">Главная</a></li>
+					<li><a href="olymp.html">Олимпиады</a></li>
+					<li><a href="koshp.html">КОШП</a></li>
+				    <li class="active"><a href="koshp-accomodation-form.html">Проживание КОШП</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="body">
+
+
+
+    <div class="row well bs-component">
+        <h1>Регистрация на проживание</h1>
+        <p>Проверьте статус Вашей регистрации <a class="text-info" href="list-koshp-accomodation.html">здесь</a></p>
+    </div>
+
+    <div class="row">
+        <div class="well bs-component">
+            <form class="form-horizontal js-form" action="" id="koshp-accomodation">
+                <fieldset>
+                    <legend>Анкета на проживание</legend>                    
+                    
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label" for="fio">ФИО</label>
+
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control js-validate-null" id="fio" name="fio" placeholder="Фамилия Имя Отчество">
+                            </div>
+                            <ul class="js-error js-fio-error"></ul>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label" for="stat">Статус</label>
+
+                            <div class="col-lg-8 has-info">
+                                <select class="form-control js-validate-null" id="stat" name="stat">
+                                    <option value="Участник">Участник</option>                                    
+                                    <option value="Сопровождающий">Сопровождающий</option>
+									<option value="Гость">Гость</option>
+                                </select>
+                            </div>
+                            <ul class="js-error js-stat-error"></ul>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                         <label class="col-lg-4 control-label" for="city">Город</label>
+
+                         <div class="col-lg-8 has-info">
+                             <input type="text" class="form-control js-validate-null" id="city" name="city" placeholder="Иннополис">
+                         </div>
+                         <ul class="js-error js-city-error"></ul>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label" for="tel">Телефон</label>
+
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control js-validate-null" id="tel" name="tel" placeholder="+79876543210">
+                            </div>
+                            <ul class="js-error js-tel-error"></ul>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label" for="email">Email</label>
+
+                            <div class="col-lg-8">
+                                <input type="email" class="form-control js-validate-null" id="email" name="email" placeholder="informatics@innopolis.ru">
+                            </div>
+                            <ul class="js-error js-email-error"></ul>
+                        </div>
+                    </div>
+					
+					<div class="form-group">						
+						<div class="form-group">
+                            <label class="col-lg-4 control-label" for="arrival_date">Дата приезда</label>
+
+                            <div class="col-lg-8">
+                                <input type="arrival_date" class="form-control js-validate-null" id="arrival_date" name="arrival_date" placeholder="24 октября">
+                            </div>
+                            <ul class="js-error js-arrival_date-error"></ul>
+                        </div>
+						<div class="form-group">
+                            <label class="col-lg-4 control-label" for="depart_date">Дата отъезда</label>
+
+                            <div class="col-lg-8">
+                                <input type="depart_date" class="form-control js-validate-null" id="depart_date" name="depart_date" placeholder="25 октября">
+                            </div>
+                            <ul class="js-error js-depart_date-error"></ul>
+                        </div>                        
+						                        
+                    </div>                    
+                        
+                    <button class="btn btn-lg btn-info" type="submit">Зарегистрироваться</button>
+					<div class="js-user-saved alert alert-dismissable alert-info" hidden="hidden">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        <h4>Поздравляем</h4>
+
+                        <p>Регистрация прошла успешно. Убедитесь в этом, найдя себя <a class="alert-link" href="list-koshp-accomodation.html">здесь</a>
+                        </p>
+                    </div>
+                    <div class="js-user-notsaved alert alert-dismissable alert-danger" hidden="hidden">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        <h4>Неудача</h4>
+
+                        <p>К сожалению, попытка регистрации неуспешна.
+                        </p>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    
+</div>
+
+<footer>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="http://university.innopolis.ru/">АНО ВО "Университет Иннополис"</a><br/> 
+            <a href="partners.html">Партнеры</a><br/>           
+        </div>
+        <div class="col-xs-8">
+            <p>Контакты оргкомитета:<br/>
+            <a href="mailto:i.safiulin@innopolis.ru">Ильшат Сафиулин</a><br/>
+            <a href="mailto:e.nureeva@innopolis.ru">Эльвира Нуреева</a><br/></p>
+        </div>
+    </div>
+
+</footer>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/material.min.js"></script>
+<script src="js/ripples.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/script.js"></script>
+<script src="js/form.js"></script>
+<script>
+    $(function () {
+        $.material.init();
+        $.material.ripples();
+    });
+</script>
+</body>
+</html>

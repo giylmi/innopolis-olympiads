@@ -30,7 +30,7 @@
                     <li><a href="index.html">Главная</a></li>
 					<li><a href="olymp.html">Олимпиады</a></li>
 					<li><a href="koshp.html">КОШП</a></li>
-					<li class="active"><a href="list-koshp.html">Список команд</a></li>
+					<li class="active"><a href="list-koshp.html">Заявки проживание</a></li>
                 </ul>
             </div>
         </div>
@@ -43,15 +43,15 @@
 
     <div class="row">
         <div class="well bs-component">
-            <h2>Заявки на участие</h2>
-			<p>Когда Вы заполнили анкету, в этом списке появится Ваша команда со статусом "ожидание". После того, как Наш сотрудник проверит анкету статус сменится на "подтвержден" или "отклонен". Статус "подвтержден" означает, что все поля анкеты заполнены верно. Статус "отклонен" означает, что какие-то поля заполнены некорректно, нужно заполнить анкету еще раз или связаться с оргкомитетом.</p>
+            <h2>Заявки на проживание</h2>
+			<p>Список заявок на проживание.</p>
             <div class="js-table-wrapper">
             <table class="table table-striped js-table">
                 <thead>
                     <tr>
-                        <td>Команда</td>
-                        <td>Участники</td>
-                        <td>Статус</td>
+                        <td>ФИО</td>
+                        <td>Дата приезда</td>
+                        <td>Дата отъезда</td>
                     </tr>
                 </thead>
                 <tbody class="js-table-body">
@@ -80,7 +80,7 @@
 <script src="js/ripples.js"></script>
 <script src="js/bootstrap-datepicker.js"></script>
 <script src="js/script.js"></script>
-<script src="js/table-koshp.js"></script>
+<script src="js/table-koshp-accomodation.js"></script>
 <script>
     $(function () {
         $.material.init();
