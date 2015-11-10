@@ -2,11 +2,8 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Открытая Олимпиада Университета Иннополис</title><!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Открытая Олимпиада Университета Иннополис</title>    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>Открытая Олимпиада Университета Иннополис</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
 
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <link href="css/material.min.css" rel="stylesheet" type="text/css">
@@ -31,10 +28,10 @@
         <div class="col-xs-8">
             <div class="">
                 <ul class="nav nav-pills pull-right">
-                    <li><a href="index.html">Информация</a></li>                    
-                    <li class="active"><a href="summer-registration-form.html">Заявка ШОП</a></li>
-                    <li><a href="olymp.html">Олимпиады</a></li>
-					
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="olymp.html">Олимпиады</a></li>                                        
+                    <li><a href="elimination.html">Отборочный этап</a></li>
+                    <li class="active"><a href="elimination-registration-form.html">Заявка</a></li>                    
                 </ul>
             </div>
         </div>
@@ -44,59 +41,56 @@
 <div class="body">
 
 
-    <div class="row well bs-component">
-        <h1>Заявка на участие в летних сборах</h1>
-		<p></p>
-		<p>Проверьте статус Вашей регистрации <a class="text-info" href="list-summer.html">здесь</a></p>
-    </div>
-
+    
     <div class="row">
         <div class="well bs-component">
-            <form class="form-horizontal js-form" action="" id="sss-registration-form">
-                <fieldset>
-                    <legend>Анкета участника</legend>
-                    <p class="small"><small>*данные несовершеннолетнего участника заполняются законным представителем </small></p>
+            <legend>Регистрация на отборочный этап олимпиады</legend>
+            <!--p class="text-warning">Регистрация закрыта!</p-->
+            <form class="form-horizontal js-form" action="" id="elimination-registration-form">
+                <fieldset>                    
+					<p class="text-warning">Для участия в первом отборочном туре необходимо зарегистрироваться до 23:59 5 декабря, и до 23:59 18 декабря для участия во втором туре.</p>
+                    <p class="small"><small>*для несовершеннолетнего участника анкета заполняется законным представителем </small></p>
                     
                     <div class="form-group">
                         <div class="form-group">
-                            <label class="col-lg-4 control-label" for="last_name">Фамилия</label>
+                            <label class="col-lg-2 control-label" for="lastName">Фамилия</label>
 
-                            <div class="col-lg-8">
-                                <input type="text" class="form-control js-validate-null" id="last_name" name="last_name" placeholder="Фамилия">
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control js-validate-null" id="lastName" name="lastName" placeholder="Фамилия">
                             </div>
-                            <ul class="js-error js-last_name-error"></ul>
+                            <ul class="js-error js-lastName-error"></ul>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-4 control-label" for="first_name">Имя</label>
+                            <label class="col-lg-2 control-label" for="firstName">Имя</label>
 
-                            <div class="col-lg-8">
-                                <input type="text" class="form-control js-validate-null" id="first_name" name="first_name" placeholder="Имя">
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control js-validate-null" id="firstName" name="firstName" placeholder="Имя">
                             </div>
-                            <ul class="js-error js-first_name-error"></ul>
+                            <ul class="js-error js-firstName-error"></ul>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-4 control-label" for="middle_name">Отчество</label>
+                            <label class="col-lg-2 control-label" for="middleName">Отчество</label>
 
-                            <div class="col-lg-8 has-info">
-                                <input type="text" class="form-control js-validate-null" id="middle_name" name="middle_name" placeholder="Отчество">
+                            <div class="col-lg-10 has-info">
+                                <input type="text" class="form-control js-validate-null" id="middleName" name="middleName" placeholder="Отчество">
                             </div>
-                            <ul class="js-error js-middle_name-error"></ul>
+                            <ul class="js-error js-middleName-error"></ul>
                         </div>
 
                         <div class="form-group">
-                            <label class="col-lg-4 control-label" for="dob">Дата рождения</label>
+                            <label class="col-lg-2 control-label" for="dateOfBirth">Дата рождения</label>
 
-                            <div class="col-lg-8 has-info">
-                                <input type="text" class="form-control js-validate-null" id="dob" name="dob" placeholder="03.08.2015">
+                            <div class="col-lg-10 has-info">
+                                <input type="text" class="form-control js-validate-null" id="dateOfBirth" name="dateOfBirth" placeholder="22.03.2015">
                             </div>
-                            <ul class="js-error js-dob-error"></ul>
+                            <ul class="js-error js-dateOfBirth-error"></ul>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="form-group">
-                            <label class="col-lg-4 control-label" for="region">Регион РФ/ Страна</label>
+                            <label class="col-lg-2 control-label" for="region">Регион РФ/ Страна</label>
 
-                            <div class="col-lg-8 has-info">
+                            <div class="col-lg-10 has-info">
                                 <select class="form-control js-validate-null" name="region" id="region">									
                                     <option value="-" disabled="disabled">- Выберите регион РФ -</option>
                                     <option value="Республика Татарстан"  >Республика Татарстан</option>
@@ -194,9 +188,9 @@
                             <ul class="js-error js-region-error"></ul>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-4 control-label" for="city">Город</label>
+                            <label class="col-lg-2 control-label" for="city">Город</label>
 
-                            <div class="col-lg-8 has-info">
+                            <div class="col-lg-10 has-info">
                                 <input type="text" class="form-control js-validate-null" id="city" name="city" placeholder="Иннополис">
                             </div>
                             <ul class="js-error js-city-error"></ul>
@@ -205,18 +199,18 @@
                     </div>
                     <div class="form-group">
                         <div class="form-group">
-                            <label class="col-lg-4 control-label" for="school">Школа</label>
+                            <label class="col-lg-2 control-label" for="school">Школа</label>
 
-                            <div class="col-lg-8 has-info">
+                            <div class="col-lg-10 has-info">
                                 <input type="text" class="form-control js-validate-null" id="school" name="school" placeholder="Лицей №1">
                             </div>
                             <ul class="js-error js-school-error"></ul>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-4 control-label" for="grade">Класс</label>
+                            <label class="col-lg-2 control-label" for="grade">Класс</label>
 
-                            <div class="col-lg-8 has-info">
-                                <input type="text" class="form-control js-validate-null" id="grade" name="grade" placeholder="10">
+                            <div class="col-lg-10 has-info">
+                                <input type="text" class="form-control js-validate-null" id="grade" name="grade" placeholder="11">
                             </div>
                             <ul class="js-error js-grade-error"></ul>
                         </div>
@@ -225,92 +219,43 @@
 
                     <div class="form-group">
                         <div class="form-group">
-                            <label class="col-lg-4 control-label" for="tel">Телефон</label>
+                            <label class="col-lg-2 control-label" for="tel">Телефон</label>
 
-                            <div class="col-lg-8">
+                            <div class="col-lg-10">
                                 <input type="text" class="form-control js-validate-null" id="tel" name="tel" placeholder="+79876543210">
                             </div>
                             <ul class="js-error js-tel-error"></ul>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-4 control-label" for="email">Email</label>
+                            <label class="col-lg-2 control-label" for="email">Email</label>
 
-                            <div class="col-lg-8">
-                                <input type="email" class="form-control js-validate-null" id="email" name="email" placeholder="informatics@innopolis.ru">
+                            <div class="col-lg-10">
+                                <input type="email" class="form-control js-validate-null" id="email" name="email" placeholder="Email">
                             </div>
                             <ul class="js-error js-email-error"></ul>
                         </div>
-                    </div>
-					<div class="form-group">
                         <div class="form-group">
-                            <label class="col-lg-4 control-label" for="parent_name">ФИО одного из родителей</label>
+                            <label for="password" class="col-lg-2 control-label">Пароль</label>
 
-                            <div class="col-lg-8">
-                                <input type="parent_name" class="form-control js-validate-null" id="parent_name" name="parent_name" placeholder="Майер Марисса Ивановна">
+                            <div class="col-lg-10">
+                                <input type="password" class="form-control js-validate-null js-password" id="password" name="password" placeholder="Пароль">
                             </div>
-                            <ul class="js-error js-parent_name-error"></ul>
+                            <ul class="js-error js-password-error"></ul>
                         </div>
-						<div class="form-group">
-                            <label class="col-lg-4 control-label" for="parent_tel">Телефон одного из родителей</label>
-
-                            <div class="col-lg-8">
-                                <input type="text" class="form-control js-validate-null" id="parent_tel" name="parent_tel" placeholder="+79876543210">
-                            </div>
-                            <ul class="js-error js-parent_tel-error"></ul>
-                        </div>                        
-                    </div>
-					<div class="form-group">
-						<p>Ваши результаты на олимпиадах</p>
-						<div class="form-group">
-                            <label class="col-lg-4 control-label" for="olymp_in_final">Открытая олимпиада Университета Иннополис, финал</label>
-
-                            <div class="col-lg-8 has-info">
-                                <select class="form-control js-validate-null" name="olymp_in_final" id="olymp_in_final">
-                                    <option value="-">не участвовал</option>
-                                    <option value="участник"  >финалист</option>
-                                    <option value="призер"  >диплом III степени</option>
-                                    <option value="призер"  >диплом II степени</option>
-									<option value="победитель"  >диплом I степени</option>
-                                </select>                                
-                            </div>
-                            <ul class="js-error js-olymp_in_final-error"></ul>
-                        </div>
-						<div class="form-group">
-                            <label class="col-lg-4 control-label" for="olymp_roi_regional">Всероссийская олимпиада по информатике, региональный этап</label>
-
-                            <div class="col-lg-8 has-info">
-                                <select class="form-control js-validate-null" name="olymp_roi_regional" id="olymp_roi_regional">
-                                    <option value="-">не участвовал</option>
-                                    <option value="участник"  >участник</option>
-                                    <option value="призер"  >диплом призера</option>
-                                    <option value="победитель"  >диплом победителя</option>
-                                </select>                                
-                            </div>
-                            <ul class="js-error js-olymp_roi_regional-error"></ul>
-                        </div>
-						<div class="form-group">
-                            <label class="col-lg-4 control-label" for="olymp_roi_final">Всероссийская олимпиада по информатике, заключительный этап</label>
-
-                            <div class="col-lg-8 has-info">
-                                <select class="form-control js-validate-null" name="olymp_roi_final" id="olymp_roi_final">
-                                    <option value="-">не участвовал</option>
-                                    <option value="участник"  >участник</option>
-                                    <option value="призер"  >диплом призера</option>
-                                    <option value="победитель"  >диплом победителя</option>
-                                </select>                                
-                            </div>
-                            <ul class="js-error js-olymp_roi_final-error"></ul>
+                        <div class="form-group">
+                            <label class="control-label col-lg-2" for="showPassword">Показать пароль</label>
+                            <input class="checkbox-inline checkbox my-checkbox" id="showPassword" type="checkbox"/>
                         </div>
                     </div>
                     
                         <p class="small"><small>*В соответствии со статьей 9 Федерального закона от 27.07.2006 N 152-ФЗ «О персональных данных» я, являясь законным представителем несовершеннолетнего ребенка, указанного в анкете, настоящим даю свое согласие АНО ВО „Университет Иннополис“ на автоматизированную, а также без использования средств автоматизации обработку персональных данных несовершеннолетнего ребенка, указанных в анкете, а именно совершение действий, предусмотренных пунктом 3 статьи 3 Федерального закона от 27.07.2006 N 152-ФЗ «О персональных данных» в целях участия в Открытой Олимпиаде Университета Иннополис по программированию для школьников. Данное мною согласие действует до дня его отзыва в письменной форме.</small>
                         </p>
-                    <button class="btn btn-lg btn-info" type="submit">Подать заявку</button>
+                    <button class="btn btn-lg btn-info" type="submit">Зарегистрироваться</button>
 					<div class="js-user-saved alert alert-dismissable alert-info" hidden="hidden">
                         <button type="button" class="close" data-dismiss="alert">×</button>
                         <h4>Поздравляем</h4>
 
-                        <p>Регистрация прошла успешно. Убедитесь в этом, найдя себя <a class="alert-link" href="list-summer.html">здесь</a>
+                        <p>Регистрация прошла успешно. Убедитесь в этом, найдя себя <a class="alert-link" href="list-elimination.html">здесь</a>
                         </p>
                     </div>
                     <div class="js-user-notsaved alert alert-dismissable alert-danger" hidden="hidden">
@@ -323,7 +268,21 @@
                 </fieldset>
             </form>
         </div>
-    </div>    
+    </div>
+    
+	<div class="row">
+		<div class="span12">
+
+		<div id="partners" class="owl-carousel">
+			<div class="item"><a href="http://tatarstan.ru/" target="_blank"><img src="images/rt_for_site.png"></a></div>
+			<div class="item"><a href="http://megafon.ru/" target="_blank"><img src="images/megafon-footer.jpg"></a></div>
+			<div class="item"><a href="http://www.minsvyaz.ru/ru/" target="_blank"><img src="images/misv-footer.png"></a></div>
+			<div class="item"><a href="http://dnevnik.ru/" target="_blank"><img src="images/dnevnik-ru-footer.png"></a></div>
+			<div class="item"><a href="http://foxford.ru/courses?ref=innopolis" target="_blank"><img src="images/foxford-ru-footer.png"></a></div>
+		</div>  
+	</div>
+	</div>
+    
 </div>
 
 <footer>
@@ -340,17 +299,45 @@
     </div>
 
 </footer>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/material.min.js"></script>
-	<script src="js/ripples.js"></script>
-	<script src="js/bootstrap-datepicker.js"></script>
-	<script src="js/script.js"></script>
-	<script src="js/form.js"></script>
-	<script>
-		$(function () {
-			$.material.init();
-			$.material.ripples();
-		});
-	</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/material.min.js"></script>
+<script src="js/ripples.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/script.js"></script>
+<script src="js/form.js"></script>
+<script>
+    $(function () {
+        $.material.init();
+        $.material.ripples();
+    });
+</script>
+	<script src="js/owl-carousel/owl.carousel.js"></script>
+
+
+    <!-- Demo -->
+
+    <style>
+    #partners .item{
+        margin: 3px;
+    }
+    #partners .item img{
+        display: block;
+        width: auto;
+        height: 100%;
+    }
+    </style>
+
+
+    <script>
+    $(document).ready(function() {
+      $("#partners").owlCarousel({
+        autoPlay: 3000,
+        items : 4,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+      });
+
+    });
+    </script>
 </body>
 </html>
