@@ -57,7 +57,7 @@ $(document).ready(function () {
 
     $('.my-checkbox').on('click', function () {
         var $this = $(this);
-        var $password = $this.parents('.js-form').find('js-password');
+        var $password = $this.parents('.js-form').find('.js-password');
         if ($this.is(':checked')) $password.attr('type', 'text');
         else $password.attr('type', 'password');
     })
