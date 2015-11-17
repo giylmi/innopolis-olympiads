@@ -3,6 +3,8 @@
  */
 $(document).ready(function () {
     var $forms = $('.js-form');
+	var $jsUserSubmit = $forms.find('.js-user-submit');
+	$jsUserSubmit.show();
     $forms.on('submit', function (e) {
         e.preventDefault();
         var $form = $(this);
@@ -13,10 +15,12 @@ $(document).ready(function () {
         var $jsError = $form.find('.js-error');
         var $jsUserNotSaved = $form.find('.js-user-notsaved');
         var $jsUserSaved = $form.find('.js-user-saved');
+		
 
         $jsError.html('');
         $jsUserNotSaved.hide();
         $jsUserSaved.hide();
+		$jsUserSubmit.hide();
 
         $.ajax({
             type: 'POST',
@@ -44,8 +48,10 @@ $(document).ready(function () {
 
                         }
                         if (!hasProps) {
-                            $jsUserSaved.show();
-                        }
+                            $jsUserSaved.show();							
+                        } else {
+							$jsUserSubmit.show();
+						}
                     }
                 }
             },
