@@ -26,7 +26,7 @@ $(document).ready(function () {
     };
     $.ajax({
         type: 'POST',
-        url: 'http://pcms.university.innopolis.ru/olympiads/values/elimination-registration-form-ViewObject',
+        url: 'https://pcms.university.innopolis.ru/olympiads/values/elimination-registration-form-ViewObject',
         success: function (response) {
             if (response) {
                 var data = eval(response);
